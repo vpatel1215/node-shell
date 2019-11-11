@@ -1,9 +1,5 @@
 process.stdout.write('prompt > ');
+//console.log('hello')
 
-process.stdin.on('data', (data) => {
-    const cmd = data.toString().trim();
-    const pwd = process.cwd();
-        //process.stdout.write('You typed: ' + cmd);
-        process.stdout.write(pwd);
-        process.stdout.write('\nprompt > ');
-});
+const pwd = require('./pwd');
+//pwd();
